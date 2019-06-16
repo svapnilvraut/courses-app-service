@@ -6,4 +6,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 
 public interface CoursesRepo extends MongoRepository<Courses, ObjectId> {
+    Courses findByCourseId(Integer courseId);
 }

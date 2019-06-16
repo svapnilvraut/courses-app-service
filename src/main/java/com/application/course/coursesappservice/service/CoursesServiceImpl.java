@@ -19,4 +19,9 @@ public class CoursesServiceImpl implements CoursesService {
     public List<Courses> getAllCourses() {
         return repo.findAll();
     }
+
+    @Override
+    public Courses getCourseById(Integer courseId){
+        return repo.findByCourseId(courseId);
+    }
 }

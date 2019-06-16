@@ -8,4 +8,6 @@ import java.util.List;
 @Service
 public interface CoursesService {
     List<Courses> getAllCourses();
+
+    Courses getCourseById(Integer courseId);
 }

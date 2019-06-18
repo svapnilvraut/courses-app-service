@@ -2,18 +2,17 @@ package com.application.course.coursesappservice.service;
 
 import com.application.course.coursesappservice.Entity.Courses;
 import com.application.course.coursesappservice.repository.CoursesRepo;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@AllArgsConstructor
 @Service
 public class CoursesServiceImpl implements CoursesService {
 
     private CoursesRepo repo;
-
-    public CoursesServiceImpl(CoursesRepo repo) {
-        this.repo = repo;
-    }
 
     @Override
     public List<Courses> getAllCourses() {

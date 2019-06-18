@@ -23,4 +23,9 @@ public class CoursesServiceImpl implements CoursesService {
     public Courses getCourseById(Integer courseId){
         return repo.findByCourseId(courseId);
     }
+
+    @Override
+    public void saveCourse(Courses course) {
+        repo.save(course);
+    }
 }

@@ -10,4 +10,6 @@ public interface CoursesService {
     List<Courses> getAllCourses();
 
     Courses getCourseById(Integer courseId);
+
+    void saveCourse(Courses course);
 }

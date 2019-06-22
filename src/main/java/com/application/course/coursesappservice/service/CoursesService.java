@@ -12,4 +12,6 @@ public interface CoursesService {
     Courses getCourseById(Integer courseId);
 
     void saveCourse(Courses course);
+
+    void deleteCourse(Integer courseId);
 }

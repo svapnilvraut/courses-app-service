@@ -28,4 +28,9 @@ public class CoursesServiceImpl implements CoursesService {
     public void saveCourse(Courses course) {
         repo.save(course);
     }
+
+    @Override
+    public void deleteCourse(Integer courseId) {
+        repo.deleteCourseByCourseId(courseId);
+    }
 }

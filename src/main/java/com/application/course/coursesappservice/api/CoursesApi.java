@@ -34,4 +34,9 @@ public class CoursesApi {
         service.saveCourse(course);
     }
 
+    @DeleteMapping(path="/delete/{courseId}")
+    public void deleteCourse(@PathVariable("courseId") Integer courseId) {
+        service.deleteCourse(courseId);
+    }
+
 }
